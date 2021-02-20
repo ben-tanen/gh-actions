@@ -1,0 +1,24 @@
+name: Test Action 1
+on:
+	schedule:
+		- cron: '*/5 * * * *'
+
+jobs:
+	get_time:
+		name: Get Time
+		runs-on: ubuntu-latest
+		steps:
+			- name: Checkout
+			  uses: actions/checkout@v2
+			- name: Install Python
+			  uses: actions/setup-python@v2
+			  with:
+			  	python-version: 3.8
+			- name: Create Date Report
+			  run: date > report.txt
+			- name: Commit report
+			  run: |
+                git config --global user.name 'ben-tanen'
+                git config --global user.email 'ben.tanen@gmail.com'
+                git commit -am "Automated time report"
+                git push
