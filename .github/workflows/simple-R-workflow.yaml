@@ -23,5 +23,5 @@ jobs:
       - name: Commit
         uses: ./.github/actions/commit
         with:
-          message: new time report
-          what: data/
+          message: new plot
+          what: img
