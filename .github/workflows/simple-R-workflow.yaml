@@ -1,11 +1,11 @@
-name: Simple R Report
+name: Simple R Workflow
 on:
   schedule:
     - cron: '30 * * * *'
   push:
 
 jobs:
-  get-time:
+  create-plot:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

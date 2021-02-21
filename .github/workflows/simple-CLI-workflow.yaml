@@ -1,4 +1,4 @@
-name: Simple CLI Report
+name: Simple CLI Workflow
 on:
   schedule:
     - cron: '*/5 * * * *'

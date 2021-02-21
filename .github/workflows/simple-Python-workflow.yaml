@@ -1,11 +1,11 @@
-name: Simple Python Report
+name: Simple Python Workflow
 on:
   schedule:
     - cron: '0 * * * *'
   push:
 
 jobs:
-  get-time:
+  query-page:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
