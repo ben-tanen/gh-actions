@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Create Date Report
-        run: date > data/report-$(date +"%Y-%m-%d_%H-%m").txt
+        run: date > data/report-$(date +"%Y-%m-%d_%H-%M").txt
       - name: Commit
         uses: ./.github/actions/commit
         with:
