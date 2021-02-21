@@ -16,10 +16,12 @@ jobs:
           python-version: 3.8
       - name: Build Env
         uses: ./.github/actions/build_env
+        with:
+          requirements: requirements.txt
       - name: Run Simple Script
         run: pipenv run python scripts/simple.py > data/python_report_$(date +"%Y-%m-%d_%H-%M").txt
       - name: Commit
         uses: ./.github/actions/commit
         with:
-            message: new time report
-            what: data/
+          message: new time report
+          what: data/

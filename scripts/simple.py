@@ -1,5 +1,6 @@
 import os, requests
 from bs4 import BeautifulSoup
+import spotipy
 
 req = requests.get("http://ben-tanen.com")
 
