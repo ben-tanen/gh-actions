@@ -1,7 +1,7 @@
 name: Simple CLI Workflow
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
   push:
 
 jobs:
