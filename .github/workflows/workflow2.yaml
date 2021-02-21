@@ -14,8 +14,10 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
+      - name: Build Env
+        uses: ./.github/actions/build_env
       - name: Run Simple Script
-        run: python scripts/simple.py > data/python_report_$(date +"%Y-%m-%d_%H-%M").txt
+        run: pipenv run python scripts/simple.py > data/python_report_$(date +"%Y-%m-%d_%H-%M").txt
       - name: Commit
         uses: ./.github/actions/commit
         with:
