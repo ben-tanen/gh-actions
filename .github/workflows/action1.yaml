@@ -1,7 +1,7 @@
 name: Test Action 1
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/2 * * * *'
   push:
     branches:
       - main
@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Create Date Report
-        run: date > data/report.txt
+        run: date > data/report-$(date +"%Y-%m-%d_%H-%m").txt
       - name: Commit
         uses: ./.github/actions/commit
         with:
