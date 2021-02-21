@@ -6,7 +6,7 @@ Currently this repo contains a few sample workflows:
 
 1. `simple-CLI-workflow`: pipes date of latest run in a file
 2. `simple-Python-workflow`: queries a website with some packages and output some results
-3. `simple-R-workflow`: uses the tidyverse to save a sample of `mtcars`
+3. `simple-R-workflow`: uses the ggplot2 to make a simple chart of `mtcars`
 
 In order to perform these actions, I've also set up some helper actions:
 
