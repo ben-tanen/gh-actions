@@ -1,7 +1,7 @@
 name: Simple Python Report
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 * * * *'
   push:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       - name: Build Env
         uses: ./.github/actions/build_py_env
         with:
-          requirements: requirements.txt
+          requirements: reqs/simple-reqs.txt
       - name: Run Simple Script
         run: pipenv run python scripts/simple.py > data/python_report_$(date +"%Y-%m-%d_%H-%M").txt
       - name: Commit
