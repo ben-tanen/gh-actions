@@ -1,7 +1,7 @@
 name: Test Action 1
 on:
   schedule:
-    - cron: '0,35,39,42 * * * *'
+    - cron: '0,31,35,39,42 * * * *'
   push:
   pull_request:
 
