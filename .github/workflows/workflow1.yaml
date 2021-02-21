@@ -1,9 +1,8 @@
-name: Test Action 1
+name: Simple CLI Report
 on:
   schedule:
     - cron: '*/10 * * * *'
   push:
-  pull_request:
 
 jobs:
   get-time:
@@ -11,10 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
       - name: Create Date Report
         run: date > data/report-$(date +"%Y-%m-%d_%H-%M").txt
       - name: Commit
