@@ -1,0 +1,27 @@
+name: Simple R Report
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  push:
+
+jobs:
+  get-time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Python
+        uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: 3.6.1
+      - name: Install tidyverse
+        run: |
+          install.packages("tidyverse")
+        shell: Rscript {0}
+      - name: Run Simple Script
+        run: Rscript scripts/simple.R
+      - name: Commit
+        uses: ./.github/actions/commit
+        with:
+          message: new time report
+          what: data/
