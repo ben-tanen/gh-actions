@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Build Env
-        uses: ./.github/actions/build_env
+        uses: ./.github/actions/build_py_env
         with:
           requirements: requirements.txt
       - name: Run Simple Script

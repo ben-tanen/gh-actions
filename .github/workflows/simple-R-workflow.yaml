@@ -10,13 +10,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Python
+      - name: Install R
         uses: r-lib/actions/setup-r@v1
         with:
           r-version: 3.6.1
-      - name: Install tidyverse
+      - name: Install packages
         run: |
-          install.packages("tidyverse")
+          install.packages(c("ggplot2", "dplyr"))
         shell: Rscript {0}
       - name: Run Simple Script
         run: Rscript scripts/simple.R

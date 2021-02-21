@@ -1,3 +1,8 @@
-library(tidyverse)
+library(ggplot2)
+library(dplyr)
 
-mtcars %>% head(2) %>% write.csv("data/test.csv")
+mtcars %>% 
+    ggplot() + 
+    geom_point(aes(x = mpg, y = carb)) + 
+    ggsave(file = "img.png", device = "jpeg", 
+           width = 5, height = 5, units = "in")
