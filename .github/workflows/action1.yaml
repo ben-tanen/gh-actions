@@ -15,11 +15,9 @@ jobs:
         with:
           python-version: 3.8
       - name: Create Date Report
-        run: date > report.txt
-      - name: Commit report
-        run: |
-          git add report.txt
-          git config --global user.name 'ben-tanen'
-          git config --global user.email 'ben.tanen@gmail.com'
-          git commit -am "Automated time report"
-          git push
+        run: date > data/report.txt
+      - name: Commit
+        uses: ./.github/actions/commit
+        with:
+            message: new time report
+            what: data/
