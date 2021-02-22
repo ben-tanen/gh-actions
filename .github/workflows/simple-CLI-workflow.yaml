@@ -15,5 +15,5 @@ jobs:
       - name: Commit
         uses: ./.github/actions/commit
         with:
-            message: new time report
+            message: new CLI report
             what: data/
