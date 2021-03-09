@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- google analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142877379-1">
+  </script>
+  <script>
+   window.dataLayer = w
