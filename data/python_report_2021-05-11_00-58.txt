@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- google analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142877379-1">
+  </script>
+  <script>
+   window.dataLayer = w
+
+
+['How Has Redistricting Changed Since 2011', 'Where Is Election Night 2020 Heading?', 'Plotting the 3,979 Delegates of the 2020 Democratic Primary', 'Visualizing Cities with Sports Dynasties', 'The Decade of Disney', 'Visualizing Adaptive Huffman Coding', 'ASL-LEX: A Visualization of American Sign Language', 'How A Bill Does Not Become A Law', "The Best Films That Don't Win Best Picture", "Visualizing Trump's Narrow Path to Victory", 'Partisanship and the NFL', 'A tutorial to using d3-force from someone who just learned how to use it', 'How A Subpar Football Fan Succeeds in Fantasy Football', 'Understanding the Kirkpatrick-Seidel Algorithm', "Fixing Georgia's COVID-19 Dashboard Trickery", 'Visualizing Musical Genres Using Every Noise at Once', 'Popular Movies vs. Great Films at the Oscars', 'How Obama and Trump Responded to School Shootings', 'Where Democratic donations can make the biggest impact', 'What Does the Public Think About Confederate Monuments?', 'Should I Become an NFL Scout?', 'Visualizing Our Drunken World']
+http://ben-tanen.com/projects/2020/11/13/redistricting-changes-for-2020.html
