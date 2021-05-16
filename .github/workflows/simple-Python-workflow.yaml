@@ -1,7 +1,5 @@
 name: Simple Python Workflow
 on:
-  schedule:
-    - cron: '0 */6 * * *'
   push:
 
 jobs:

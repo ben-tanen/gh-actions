@@ -1,7 +1,5 @@
 name: Simple R Workflow
 on:
-  schedule:
-    - cron: '30 */6 * * *'
   push:
 
 jobs:
